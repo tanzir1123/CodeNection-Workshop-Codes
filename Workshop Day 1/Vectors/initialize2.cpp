@@ -13,11 +13,12 @@ void print(vector<int> &v){
 
 int main(){
     int n = 10;
-    vector <int> v(n, -1);
+    vector <int> v(n, -1); // -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 
-    v.push_back(100);
-    print(v);
+    v.push_back(100); // -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 100
+    
     v.pop_back();
+    print(v);
 
     cout << "Inserting in the middle:  " << endl;
     v.insert(v.begin() + 3, 2000);

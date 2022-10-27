@@ -6,7 +6,7 @@ void printset(set <int> &s){
     for(auto i : s){
         cout << i << " ";
     }
-
+    
     cout << "\n---------------------" << endl;
 }
 
@@ -32,10 +32,10 @@ int main(){
     s.erase(10); // deletes in O(logn);
     printset(s);
 
-    it = s.find(5);
+    it = s.find(100);
 
     
-    cout << *(++it) << endl;
+    cout << *(--it) << endl;
 
 
     return 0; 
